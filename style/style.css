@@ -1,0 +1,64 @@
+body{
+	margin: 0px;
+	font-family: "Brush Script MT", cursive;
+	color:darkblue;
+	line-height:1.5;
+	text-align: center;
+	background: #9933ff;
+}
+#top, #side, #main {
+	display:flex;
+}
+
+#top{
+	background:linear-gradient(to bottom, #9933ff 0%, #99ccff  100%);
+	border:10px solid white;
+	flex-direction:justify;
+	height: 350px;
+}
+
+#photo{
+	flex-basis: 20%;
+	padding:2%;
+}
+
+#name{
+	padding: 5%;
+	font-size: 150%;
+}
+
+#contacts{
+	flex-basis:30%;
+	padding:5%;
+	font-size:120%;
+}
+
+#main{
+	background:linear-gradient(to bottom, #9933ff 0%, #99ccff  100%);
+	border:15px solid white;
+	flex-direction: raw;
+	height:450px;
+	font-size: 200%;
+}
+#links{
+	padding:2%;	
+}
+#main1{
+	background:linear-gradient(to bottom, #ffffff 0%, #99ccff  100%);
+	border:10px solid white;
+	flex-basis: 80%;
+	padding: 5%;
+	color: black;
+	line-height:1;
+	font-size: 70%;
+}
+
+#side{
+	flex-basis: 20%;
+	padding:5%;	
+	flex-direction: column;
+}
+
+#text{
+	padding:5px;
+}
