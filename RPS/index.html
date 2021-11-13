@@ -1,0 +1,41 @@
+<!--
+create a rock, paper, scissors game using if statements
+https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
+When you have completed your game, please commit to GitHub and upload a text document with the link here
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="icon" type="image/png" sizes="16x16" href="fav/icon4.png">
+</head>
+<body>
+	<div class="game">
+	<h1>Rock-Paper-Scissors</h1>
+		<div class="score-box">
+			<div class="score score-user">0</div>
+			<span>:</span>
+			<div class="score score-comp">0</div>
+		</div>
+		<div class="field-container">
+			<div class="user-field">
+				<button class="field rock" data-field="r"></button>
+				<button class="field scissors" data-field="s"></button>
+				<button class="field paper" data-field="p"></button>
+			</div>
+			<div class="comp-field">
+				<button class="field rock" data-field="r"></button>
+				<button class="field scissors" data-field="s"></button>
+				<button class="field paper" data-field="p"></button>
+			</div>
+		</div>
+		<h3 class="result">You choose</h3>
+	</div>
+	<div class="buttons">
+		<button class="play">Play again</button>
+	</div>
+		<audio src="#" class="sound"></audio>
+		<script src="js/script.js"></script>
+	</body>
+</html>
