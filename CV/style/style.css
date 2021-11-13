@@ -1,0 +1,38 @@
+body{
+	margin: 0px;
+	font-family: "Brush Script MT", cursive;
+	color:darkblue;
+	text-align: center;
+	background: linear-gradient(to right, #9933ff 0%, #99ccff  100%);
+
+}
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+	margin-top:25px;
+	min-height:150px;
+	justify-content:space-between;
+}
+.show{
+	background: linear-gradient(to left, #9933ff 0%, #99ccff  100%) ;
+	border:1px solid transparent;
+}
+.sidebar{
+	min-height:400px;
+	padding-top:50px;
+}
+
+
+.text{
+	color:black;
+	font-size:150%;	
+}
+
+.links{
+	font-size:200%;
+}
