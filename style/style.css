@@ -2,63 +2,37 @@ body{
 	margin: 0px;
 	font-family: "Brush Script MT", cursive;
 	color:darkblue;
-	line-height:1.5;
 	text-align: center;
-	background: #9933ff;
+	background: linear-gradient(to right, #9933ff 0%, #99ccff  100%);
+
 }
-#top, #side, #main {
-	display:flex;
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+	margin-top:25px;
+	min-height:150px;
+	justify-content:space-between;
+}
+.show{
+	background: linear-gradient(to left, #9933ff 0%, #99ccff  100%) ;
+	border:1px solid transparent;
+}
+.sidebar{
+	min-height:400px;
+	padding-top:50px;
 }
 
-#top{
-	background:linear-gradient(to bottom, #9933ff 0%, #99ccff  100%);
-	border:10px solid white;
-	flex-direction:justify;
-	height: 350px;
+
+.text{
+	color:black;
+	font-size:150%;	
 }
 
-#photo{
-	flex-basis: 20%;
-	padding:2%;
-}
-
-#name{
-	padding: 5%;
-	font-size: 150%;
-}
-
-#contacts{
-	flex-basis:30%;
-	padding:5%;
-	font-size:120%;
-}
-
-#main{
-	background:linear-gradient(to bottom, #9933ff 0%, #99ccff  100%);
-	border:15px solid white;
-	flex-direction: raw;
-	height:450px;
-	font-size: 200%;
-}
-#links{
-	padding:2%;	
-}
-#main1{
-	background:linear-gradient(to bottom, #ffffff 0%, #99ccff  100%);
-	border:10px solid white;
-	flex-basis: 80%;
-	padding: 5%;
-	color: black;
-	line-height:1;
-	font-size: 70%;
-}
-
-#side{
-	flex-basis: 20%;
-	padding:5%;	
-	flex-direction: column;
-}
-
-#text{
-	padding:5px;
+.links{
+	font-size:200%;
 }
